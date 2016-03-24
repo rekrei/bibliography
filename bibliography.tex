@@ -1,0 +1,43 @@
+%!TEX program = xelatex
+\documentclass[a4paper]{article}
+\usepackage{ltablex}
+\usepackage{apacite}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{natbib}
+\usepackage{imakeidx}                      % Indice analitico
+\makeindex[intoc]
+
+\title{Rekrei Bibliography}
+\author{Rekrei Participants}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\section{Introduction}
+The following is a bibliography of Rekrei (formerlly Project Mosul) related publications, both popular and scientific. This is limited to publications authored by official participants of the project.
+
+\clearpage
+\section{Popular}
+\input{./bibliography/201506_Current_World_Archaeology_Coughenour_Vincent}
+\section{Conference Presentations}
+\input{./bibliography/201509_dh2015}
+\input{./bibliography/201511_chnt}
+\section{Journal Articles}
+\input{./bibliography/201509_dh2015}
+\section{Book Chapters}
+\section{Posters}
+\input{./bibliography/201511_asor_poster}
+\clearpage
+\addcontentsline{toc}{section}{References}
+\bibliography{./bibliography.bib}
+\nocite{*}
+\bibliographystyle{apacite}
+\printindex
+\end{document}
